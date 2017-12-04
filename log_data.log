@@ -1,0 +1,99 @@
+2017-11-21 15:04:56 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: Zhiyouji)
+2017-11-21 15:04:56 [scrapy.utils.log] INFO: Overridden settings: {'SCHEDULER': 'scrapy_redis.scheduler.Scheduler', 'LOG_FILE': 'D:\\代码\\爬虫\\day09\\Zhiyouji\\log_data.log', 'LOG_LEVEL': 'INFO', 'BOT_NAME': 'Zhiyouji', 'USER_AGENT': ['Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1); ', 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1) ', 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; MyIE2) ', 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; FDM; ', 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; .NET CLR 1 ', 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322) ', 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; DFO-MPO Internet Explorer 6.0) ', 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; Maxthon; .NET CLR 1.1.4322) ', 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; Maxthon; .NET CLR 1.1.4322; .NET CLR 2.0.41115) ', 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; ENGINE; Mozilla/4.0 (compatible; MSIE 6.0; Windows NT)) ', 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; winfx; .NET CLR 1.1.4322; .NET CLR 2.0.50727; Zune 2.0) ', 'Mozilla/4.0 (compatible; MSIE 5.0; Windows 98; DigExt); Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1); ', 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; ESB{F40811EE-DF17-4BC9-8785-B362ABF34098}; .NET CLR 1.1.4322) ', 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.40607; .NET CLR 1.0.3705) ', 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Avant Browser; Avant Browser; .NET CLR 1.0.3705; .NET CLR 1.1.4322; Media Center PC 4.0; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30) ', 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; FDM) ', 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; FTDv3 Browser; .NET CLR 1.0.3705; .NET CLR 1.1.4322) ', 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; FunWebProducts; .NET CLR 1.1.4322; .NET CLR 2.0.40607) '], 'NEWSPIDER_MODULE': 'Zhiyouji.spiders', 'DOWNLOAD_DELAY': 1, 'SPIDER_LOADER_WARN_ONLY': True, 'DUPEFILTER_CLASS': 'scrapy_redis.dupefilter.RFPDupeFilter', 'SPIDER_MODULES': ['Zhiyouji.spiders']}
+2017-11-21 15:04:56 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole']
+2017-11-21 15:04:56 [zhiyouji] INFO: Reading start URLs from redis key 'zhiyouji' (batch size: 16, encoding: utf-8
+2017-11-21 15:04:56 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'Zhiyouji.middlewares.RandomUserAgent',
+ 'Zhiyouji.middlewares.RandomProxy',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-11-21 15:04:56 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-11-21 15:04:56 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_redis.pipelines.RedisPipeline']
+2017-11-21 15:04:56 [scrapy.core.engine] INFO: Spider opened
+2017-11-21 15:04:56 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-11-21 15:05:46 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 http://www.jobui.com/cmp?n=4>: HTTP status code is not handled or not allowed
+2017-11-21 15:05:56 [scrapy.extensions.logstats] INFO: Crawled 7 pages (at 7 pages/min), scraped 4 items (at 4 items/min)
+2017-11-21 15:06:56 [scrapy.extensions.logstats] INFO: Crawled 22 pages (at 15 pages/min), scraped 18 items (at 14 items/min)
+2017-11-21 15:07:19 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2017-11-21 15:07:19 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2017-11-21 15:07:20 [scrapy.crawler] INFO: Received SIGINT twice, forcing unclean shutdown
+2017-11-21 15:07:20 [scrapy.core.downloader.handlers.http11] WARNING: Got data loss in http://www.jobui.com/company/1257613/. If you want to process broken responses set the setting DOWNLOAD_FAIL_ON_DATALOSS = False -- This message won't be shown in further requests
+2017-11-21 15:11:15 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: Zhiyouji)
+2017-11-21 15:11:15 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'Zhiyouji.spiders', 'SCHEDULER': 'scrapy_redis.scheduler.Scheduler', 'SPIDER_LOADER_WARN_ONLY': True, 'LOG_FILE': 'D:\\代码\\爬虫\\day09\\Zhiyouji\\log_data.log', 'USER_AGENT': ['Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1); ', 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1) ', 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; MyIE2) ', 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; FDM; ', 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; .NET CLR 1 ', 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322) ', 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; DFO-MPO Internet Explorer 6.0) ', 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; Maxthon; .NET CLR 1.1.4322) ', 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; Maxthon; .NET CLR 1.1.4322; .NET CLR 2.0.41115) ', 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; ENGINE; Mozilla/4.0 (compatible; MSIE 6.0; Windows NT)) ', 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; winfx; .NET CLR 1.1.4322; .NET CLR 2.0.50727; Zune 2.0) ', 'Mozilla/4.0 (compatible; MSIE 5.0; Windows 98; DigExt); Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1); ', 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; ESB{F40811EE-DF17-4BC9-8785-B362ABF34098}; .NET CLR 1.1.4322) ', 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.40607; .NET CLR 1.0.3705) ', 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Avant Browser; Avant Browser; .NET CLR 1.0.3705; .NET CLR 1.1.4322; Media Center PC 4.0; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30) ', 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; FDM) ', 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; FTDv3 Browser; .NET CLR 1.0.3705; .NET CLR 1.1.4322) ', 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; FunWebProducts; .NET CLR 1.1.4322; .NET CLR 2.0.40607) '], 'BOT_NAME': 'Zhiyouji', 'DOWNLOAD_DELAY': 1, 'LOG_LEVEL': 'INFO', 'DUPEFILTER_CLASS': 'scrapy_redis.dupefilter.RFPDupeFilter', 'SPIDER_MODULES': ['Zhiyouji.spiders']}
+2017-11-21 15:11:15 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.logstats.LogStats']
+2017-11-21 15:11:15 [zhiyouji] INFO: Reading start URLs from redis key 'zhiyouji' (batch size: 16, encoding: utf-8
+2017-11-21 15:11:15 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'Zhiyouji.middlewares.RandomUserAgent',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-11-21 15:11:15 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-11-21 15:11:15 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_redis.pipelines.RedisPipeline']
+2017-11-21 15:11:15 [scrapy.core.engine] INFO: Spider opened
+2017-11-21 15:11:15 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-11-21 15:11:27 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 http://www.jobui.com/company/188018/>: HTTP status code is not handled or not allowed
+2017-11-21 15:11:40 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 http://www.jobui.com/company/10985945/>: HTTP status code is not handled or not allowed
+2017-11-21 15:11:52 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 http://www.jobui.com/cmp?n=4>: HTTP status code is not handled or not allowed
+2017-11-21 15:12:15 [scrapy.extensions.logstats] INFO: Crawled 42 pages (at 42 pages/min), scraped 36 items (at 36 items/min)
+2017-11-21 15:12:48 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 http://www.jobui.com/company/57931/>: HTTP status code is not handled or not allowed
+2017-11-21 15:13:15 [scrapy.extensions.logstats] INFO: Crawled 92 pages (at 50 pages/min), scraped 82 items (at 46 items/min)
+2017-11-21 15:13:17 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 http://www.jobui.com/company/11776182/>: HTTP status code is not handled or not allowed
+2017-11-21 15:13:18 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 http://www.jobui.com/company/12105548/>: HTTP status code is not handled or not allowed
+2017-11-21 15:13:19 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 http://www.jobui.com/company/12336565/>: HTTP status code is not handled or not allowed
+2017-11-21 15:14:15 [scrapy.extensions.logstats] INFO: Crawled 142 pages (at 50 pages/min), scraped 126 items (at 44 items/min)
+2017-11-21 15:14:28 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 http://www.jobui.com/company/11215495/>: HTTP status code is not handled or not allowed
+2017-11-21 15:14:41 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 http://www.jobui.com/company/11013684/>: HTTP status code is not handled or not allowed
+2017-11-21 15:14:54 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 http://www.jobui.com/cmp?n=12>: HTTP status code is not handled or not allowed
+2017-11-21 15:14:58 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 http://www.jobui.com/company/482915/>: HTTP status code is not handled or not allowed
+2017-11-21 15:15:15 [scrapy.extensions.logstats] INFO: Crawled 189 pages (at 47 pages/min), scraped 167 items (at 41 items/min)
+2017-11-21 15:15:31 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 http://www.jobui.com/company/11926262/>: HTTP status code is not handled or not allowed
+2017-11-21 15:16:14 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 http://www.jobui.com/company/8038395/>: HTTP status code is not handled or not allowed
+2017-11-21 15:16:15 [scrapy.extensions.logstats] INFO: Crawled 237 pages (at 48 pages/min), scraped 211 items (at 44 items/min)
+2017-11-21 15:16:22 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 http://www.jobui.com/company/12834274/>: HTTP status code is not handled or not allowed
+2017-11-21 15:16:45 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 http://www.jobui.com/company/18247/>: HTTP status code is not handled or not allowed
+2017-11-21 15:16:46 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 http://www.jobui.com/company/19028/>: HTTP status code is not handled or not allowed
+2017-11-21 15:17:06 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 http://www.jobui.com/company/656130/>: HTTP status code is not handled or not allowed
+2017-11-21 15:17:15 [scrapy.extensions.logstats] INFO: Crawled 287 pages (at 50 pages/min), scraped 254 items (at 43 items/min)
+2017-11-21 15:17:53 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 http://www.jobui.com/cmp?n=19>: HTTP status code is not handled or not allowed
+2017-11-21 15:18:15 [scrapy.extensions.logstats] INFO: Crawled 338 pages (at 51 pages/min), scraped 302 items (at 48 items/min)
+2017-11-21 15:18:49 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 http://www.jobui.com/company/504539/>: HTTP status code is not handled or not allowed
+2017-11-21 15:19:15 [scrapy.extensions.logstats] INFO: Crawled 388 pages (at 50 pages/min), scraped 348 items (at 46 items/min)
+2017-11-21 15:19:27 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 http://www.jobui.com/company/9959852/>: HTTP status code is not handled or not allowed
+2017-11-21 15:19:27 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2017-11-21 15:19:27 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2017-11-21 15:19:28 [scrapy.crawler] INFO: Received SIGINT twice, forcing unclean shutdown
